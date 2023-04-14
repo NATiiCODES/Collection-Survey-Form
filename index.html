@@ -8,30 +8,43 @@
     <title> Collections Survey </title>
 </head>
 <body>
-    <h1>Collections Survey</h1>
-    <p>Hello my name is Natiicodes. </p>
-     <p>I am collector of Starbucks, Dia De Los Muertos Barbie's.</p>
-    
-    <label><input type="text" placeholder="Enter name" required> Name </label>
-    
-    <label><input type="numbers" min="1" max="200"  required> How long have you been collecting? </label> 
+    <div class="container">
+        <h1 class="text-center">Collections Survey</h1>
+        <p id="description" class="description text">Hello my name is Natiicodes. </p>
+        <p id="description" class="description text">I am collector of Starbucks, Dia De Los Muertos Barbie's.</p>
 
-    <p>What do you collect?</p>
-    <select id="dropdown">
-        <option>Section Collection</option>
-        <option>Action Figures</option>
-        <option>Starbucks</option>
-        <option>Barbie's Dia de Los Muertos</option>
-        <option>Funko pops</option>
-        <option>Technology</option>
-        <option>Other</option>
-        <option>All of the above</option>
-    </select>
+        
+        <form id="survey-form" class="survey-form">
 
-    <p>What was the most enjoyable moment about collecting?</p>
-    <textarea type="text" min="5" max="200" placeholder="Comment Here"></textarea>
+            <div class="form-group">
+                <label><input type="text" placeholder="Enter name" required> Name </label>
+            </div>
+            
+            <div  class="form-group">
+             <label><input type="numbers" min="1" max="200" placeholder="How many years" required> How long have you been collecting? </label> 
+            </div>
+            <div class="form-group">
+                <p>What do you collect?</p>
+                <select id="dropdown">
+                    <option>Section Collection</option>
+                    <option>Action Figures</option>
+                    <option>Starbucks</option>
+                    <option>Barbie's Dia de Los Muertos</option>
+                    <option>Funko pops</option>
+                    <option>Technology</option>
+                    <option>Other</option>
+                    <option>All of the above</option>
+                </select>
+            </div>
 
-    <button type="submit" id="submit">Submit</button>
-
+            <div  class="form-group">
+                <p>What was the most enjoyable moment about collecting?</p>
+                <textarea type="text" min="5" max="200" placeholder="Comment Here"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body> 
 </html>
